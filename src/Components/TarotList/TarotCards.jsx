@@ -1,5 +1,6 @@
 import { useState } from "react";
 import tarot from "./tarot.json";
+import Popup from "./Popup";
 
 const TarotCards = (props) => {
   const [expand, setExpand] = useState(false);
@@ -17,9 +18,12 @@ const TarotCards = (props) => {
             {tarot.cards
               .filter((card) => card.arcana === "Major Arcana")
               .map((card) => (
-                <li key={card.number}>{card.name}</li>
+                <button key={card.number}>{card.name}</button>
               ))}
           </ul>
+          <Popup trigger={true}>
+            <h1>HELLO!!! </h1>
+          </Popup>
         </div>
       )}
     </div>
