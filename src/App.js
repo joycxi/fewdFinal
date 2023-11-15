@@ -9,11 +9,11 @@ export default function App() {
   return (
     <div className="App">
       <Darktheme />
-      <h1>Accordian</h1>
-      <h2>death. to them all. </h2>
-      <Accordion />
+      <h1>Tarot Wiki</h1>
+      <h2>Click around to learn more! </h2>
       <TarotCards />
       <MinorCards />
+      <Accordion />
     </div>
   );
 }
